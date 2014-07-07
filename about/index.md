@@ -17,7 +17,7 @@ Linkedin: [Qingxiang Jia @ Linkedin](http://www.linkedin.com/pub/qingxiang-jia/3
 点点: [longstation.diandian.com](http://longstation.diandian.com)  
 知乎: [zhihu.com/qingxiang-jia](http://www.zhihu.com/people/qingxiang-jia)
 
-### My project on Google Code
+### My projects on Google Code
 
 Smart Annotator: [code.google.com/p/smart-annotator/](https://code.google.com/p/smart-annotator/)  
 Geeky Shutdown: [code.google.com/p/geeky-shutdown/](https://code.google.com/p/geeky-shutdown/)
