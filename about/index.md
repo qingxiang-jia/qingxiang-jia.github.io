@@ -11,7 +11,7 @@ I love computers and locomotives.
 
 Mail: ybjqx3340@gmail.com OR qj2125@columbia.edu  
 Home Page: [www.columbia.edu/~qj2125](http://www.columbia.edu/~qj2125)  
-github : [github.com/qingxiang-jia](https://github.com/dashjim)  
+github : [github.com/qingxiang-jia](https://github.com/qingxiang-jia)  
 Linkedin: [Qingxiang Jia @ Linkedin](http://www.linkedin.com/pub/qingxiang-jia/32/4a6/54/)
 
 点点: [longstation.diandian.com](http://longstation.diandian.com)  
