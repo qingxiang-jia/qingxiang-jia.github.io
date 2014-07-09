@@ -1,0 +1,9 @@
+---
+layout: post
+title: fcitx-sougou的下载地址
+categories:
+- Diandian
+tags:
+- Linux, 计算机技术, 网络, 
+---
+国内这点事儿就是麻烦，刚刚fcitx-sougou的包放出来，deepin就撤下了。原因貌似是搜狗只同意deepin把这个拼音用在deepin的系统上，所以其他所有Linux发行版都无缘。好吧，既然如此不讲道理，我也无话可说了。其实闭源根本不是问题，有很多闭源软件，比如Skype啊这些，的确是不能看源码，但是没有说只提供给特定的系统用啊（而且本身都是通用的，是人为的不发包）。为了解决这种悲剧的状况，我觉得只能黑吃黑。有这么一个东西叫dpkg-repack，就是用来打包已经安装了的程序。比如，前天我装了fcitx-sougou，但是很快源里就没有这个包了，而我已经清除了下载缓存，这种况下就用dpkg-repack。 以下的下载链接是我用dpkg-repack提取的fcitx-sougou的包，注意因为我用的是64位系统，所以提取出来的包都是64位的: fcitx\_4.2.6.1-2deepin2\_all.deb fcitx-bin\_4.2.6.1-2deepin2\_amd64.deb fcitx-config-common\_0.4.5.1-1deepin\_all.deb fcitx-config-gtk\_0.4.5.1-1deepin\_amd64.deb fcitx-data\_4.2.6.1-2deepin2\_all.deb fcitx-frontend-all\_4.2.6.1-2deepin2\_all.deb fcitx-frontend-gtk2\_4.2.6.1-2deepin2\_amd64.deb fcitx-frontend-gtk3\_4.2.6.1-2deepin2\_amd64.deb fcitx-frontend-qt4\_4.2.6.1-2deepin2\_amd64.deb fcitx-libs\_4.2.6.1-2deepin2\_amd64.deb fcitx-module-dbus\_4.2.6.1-2deepin2\_amd64.deb fcitx-module-kimpanel\_4.2.6.1-2deepin2\_amd64.deb fcitx-module-lua\_4.2.6.1-2deepin2\_amd64.deb fcitx-modules\_4.2.6.1-2deepin2\_amd64.deb fcitx-module-x11\_4.2.6.1-2deepin2\_amd64.deb fcitx-skin-sogou\_0.0.2\_all.deb fcitx-sogoupinyin\_0.0.0-2\_amd64.deb fcitx-ui-classic\_4.2.6.1-2deepin2\_amd64.deb 顺便说一下，因为华为网盘总是要求在下载文件的时候安装一个他们的插件，我决定不再用华为网盘了（其实不装插件完全可以绕开下载，搞不清楚这些插件又在搜集什么信息），现在用百度网盘。 下载地址：\[http://pan.baidu.com/share/link?shareid=355489&uk=2285208125\]\[http\_pan.baidu.com\_share\_link\_shareid\_355489\_uk\_2285208125\] \[http\_pan.baidu.com\_share\_link\_shareid\_355489\_uk\_2285208125\]: http://pan.baidu.com/share/link?shareid=355489&uk=2285208125
