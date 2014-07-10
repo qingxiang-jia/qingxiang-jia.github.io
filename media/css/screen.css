@@ -33,6 +33,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+/* Use mono fonts for time */
+time {
+  font-family:"Courier New", Courier, monospace
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
