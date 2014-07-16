@@ -4,7 +4,8 @@ title: Full Circle 翻译文章#32 Q&amp;A
 categories:
 - Diandian
 tags:
-- 网络, 
+- 网络
+
 ---
 全称是第三十二期Question and Answer。之前一直习惯在杂志（甚至是英文杂志）发表之前在本博提前发表文章，今天在FC工作页面看到提示，现在禁止在杂志发布之前提前发表文章，所以就不在这里刊登本文内容。
 <br />

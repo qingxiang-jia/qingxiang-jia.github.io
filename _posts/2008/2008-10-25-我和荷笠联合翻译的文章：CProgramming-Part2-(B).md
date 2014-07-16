@@ -4,7 +4,8 @@ title: 我和荷笠联合翻译的文章：CProgramming-Part2 (B)
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>Loops and things</p>
 <p>The example code has been written so that the most common loop/decisions constructs are used. In this section, 'statements1;' means any sequence of application logic. The first and most common structure can be seen from line 13 to 28 and line 49 to 56, and has the following structure:</p>

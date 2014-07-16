@@ -4,7 +4,8 @@ title: ｛转cnBeta：｝取消NOIP保送 中国计算机学会(CCF)网站被黑
 categories:
 - Diandian
 tags:
-- 精神, 
+- 精神
+
 ---
 新闻来源:原创
 <br />中国计算机学会CCF，及NOI官方网站被黑

@@ -4,7 +4,8 @@ title: Linux WIKI （I）(ABCD)
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 Thanks to Romain Lerallut who authored the original version for NewbieDoc and to all the
 <br />

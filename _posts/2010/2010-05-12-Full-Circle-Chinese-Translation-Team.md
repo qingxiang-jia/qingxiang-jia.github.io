@@ -4,7 +4,8 @@ title: Full Circle Chinese Translation Team
 categories:
 - Diandian
 tags:
-- 精神, 
+- 精神
+
 ---
 英文Full Circle杂志官方网站：fullcirclemagazine.org/
 <br />

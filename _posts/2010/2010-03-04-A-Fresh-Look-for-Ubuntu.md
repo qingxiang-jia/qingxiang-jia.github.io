@@ -4,7 +4,8 @@ title: A Fresh Look for Ubuntu
 categories:
 - Diandian
 tags:
-- 精神, 
+- 精神
+
 ---
 <img src="http://m1.img.srcdd.com/farm5/d/2012/0627/10/59AB86AEE3F5B33B0E93469862B5A9EE_B500_900_500_320.PNG" />
 <br />新logo

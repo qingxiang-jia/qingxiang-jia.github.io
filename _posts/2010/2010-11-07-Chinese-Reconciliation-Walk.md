@@ -4,7 +4,8 @@ title: Chinese Reconciliation Walk
 categories:
 - Diandian
 tags:
-- 精神, 
+- 精神
+
 ---
 125年前，Tacoma（也就是PLU所在的城市）把中国人赶出去了，现在他们要忏悔，修建了一座公园以纪念不幸的历史（更多详细资料：
 <a href="http://www.crpftacoma.org/">http://www.crpftacoma.org/</a>）。

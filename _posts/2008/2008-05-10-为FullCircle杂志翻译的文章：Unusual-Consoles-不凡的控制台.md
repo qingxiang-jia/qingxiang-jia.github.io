@@ -4,7 +4,8 @@ title: 为FullCircle杂志翻译的文章：Unusual Consoles 不凡的控制台
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 翻译：Lee&nbsp;&nbsp;
 <br />翻译状态：FINISHED

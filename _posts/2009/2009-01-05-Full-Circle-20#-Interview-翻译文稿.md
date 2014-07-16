@@ -4,7 +4,8 @@ title: Full Circle 20# Interview 翻译文稿
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>翻译：Lee<br />翻译状态：Done<br />校对：<br />校对状态：<br />二校：<br />二校状态：<br />正体：<br />正体状态：</p>AndreaColangelo
 <strong><br /></strong>

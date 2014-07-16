@@ -4,7 +4,8 @@ title: 志愿工作：新翻译的Full Circle文章《14-Howto-iPod Photos》
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 翻译：Lee （贾庆祥）
 <br />翻译状态：Done

@@ -4,7 +4,8 @@ title: sudo dpkg --configure -a的作用
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 昨天下载non-free flash的时候误以为卡住了，于是强行关闭KpackageKit，导致从此以后无法使用它安装任何程序，因为在程序的记录当中non-free flash的安装并没有完成。怎么都解决不了，于是在网上找，最后在ubuntuforums.org上找到了解决方法，
 <br />

@@ -4,7 +4,8 @@ title: Mozilla家生了新娃娃：Instantbird
 categories:
 - Diandian
 tags:
-- 网络, 
+- 网络
+
 ---
 <ul>
  <li>AIM</li>

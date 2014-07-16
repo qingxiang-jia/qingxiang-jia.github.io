@@ -4,7 +4,8 @@ title: Global List and Waveforms
 categories:
 - Diandian
 tags:
-- 日常生活, 
+- 日常生活
+
 ---
 数据来自SED
 <a href="http://www.seismo.ethz.ch/icons/sed_logo_klein.gif" target="_blank"><img alt="http://www.seismo.ethz.ch/icons/sed_logo_klein.gif" src="http://m1.img.srcdd.com/farm3/d/2012/0306/12/DOWNLOADFAILAAAAAAAAAAAAAAAAAAAA_B500_900_200_80.PNG" /></a>

@@ -4,7 +4,8 @@ title: SunPinyin无法安装之分析
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 对于Ubuntu系统，对于Deb包，我们只需要
 <a href="http://www.91files.com/?ES8G1UMAGHB9CTSK8NW8" target="_blank">sunpinyin-data-le_1.0~hg20090201-1_all.deb</a>和

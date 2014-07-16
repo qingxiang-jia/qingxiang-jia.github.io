@@ -4,7 +4,8 @@ title: Linux下的完整Flash支持
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 Flash 10
 <br />Flash查检式播放器（Adobe官方no-free）：

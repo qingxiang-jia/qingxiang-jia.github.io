@@ -4,7 +4,8 @@ title: Ubuntu One试用
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 今天收到了Canonical发来的邀请，试用了Ubuntu One。
 <br />之前的安装步骤官网上已经很详细了，Ubuntu中文论坛上也有翻译，因此不多讲。说说网上没有的部分吧。

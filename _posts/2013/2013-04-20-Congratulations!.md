@@ -4,7 +4,13 @@ title: Congratulations!
 categories:
 - Diandian
 tags:
-- 日常生活, 精神, 课内学习, 计算机技术, 提前总结, Columbia, 
+- 日常生活
+- 精神
+- 课内学习
+- 计算机技术
+- 提前总结
+- Columbia
+
 ---
 <p class="edui-filter-align-center"><img src="http://m1.img.srcdd.com/farm5/d/2013/0420/05/0397443574630C086375FED3CE9A24D0_B500_900_500_110.JPEG" /><br /></p>
 <p>Mr. Qingxiang Jia<br />Columbia ID: CXXXXXXXXX<br /> </p>

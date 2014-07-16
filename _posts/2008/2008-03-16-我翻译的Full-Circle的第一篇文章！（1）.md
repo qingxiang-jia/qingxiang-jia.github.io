@@ -4,7 +4,8 @@ title: 我翻译的Full Circle的第一篇文章！（1）
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 翻译：贾庆祥（Lee）(回来了，对不起，最近比较忙，连夜翻译现在) &amp; sctronlinux &nbsp;&nbsp;
 <br />翻译状态：100%

@@ -4,7 +4,8 @@ title: Linux上玩Windows游戏的新选择！——Mandriva老乡——PlayOnLi
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>PlayOnLinux 包括如下特点：</p>
 <ul>

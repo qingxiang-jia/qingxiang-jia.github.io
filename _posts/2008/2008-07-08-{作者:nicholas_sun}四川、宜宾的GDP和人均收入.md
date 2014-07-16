@@ -4,7 +4,8 @@ title: {作者:nicholas_sun}四川、宜宾的GDP和人均收入
 categories:
 - Diandian
 tags:
-- 日常生活, 
+- 日常生活
+
 ---
 中国各省GDP排名
 <br />名次&nbsp;&nbsp;&nbsp;&nbsp; GDP（亿元）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 人均GDP（元）

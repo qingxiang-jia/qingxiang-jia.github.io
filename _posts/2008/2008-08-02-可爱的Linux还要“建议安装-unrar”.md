@@ -4,7 +4,8 @@ title: 可爱的Linux还要“建议安装 unrar”
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 lee@lee-desktop:~$ sudo apt-get install rar
 <br />[sudo] password for lee:

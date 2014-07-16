@@ -4,7 +4,8 @@ title: {作者：sixth}如何通过数字来判断Linux系统分区的类型
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>在linux系统下一个硬盘只有4个分区，其中一个主分区为逻辑分区。linux把主分区用数字1、2、3、4来标示，5以上数字表示逻辑分区，所以可以通过数字来判断分区的类型。</p>
 <p> </p>

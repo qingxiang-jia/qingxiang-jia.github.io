@@ -4,7 +4,8 @@ title: 我和荷笠联合翻译的文章：CProgramming-Part2 (C)
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>一个第二循环在47搭配57行；这是一个for循环，一下是它的语法：</p>
 <p>for(init_variable;condition;update_variable)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp; statements;<br />}<br /></p>

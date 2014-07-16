@@ -4,7 +4,8 @@ title: 我翻译的Full Circle的第一篇文章！（2）
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>但是，在XLib下编写游戏会导致灭亡。我们怎样做出像 Planet Penguin Racer 和Super Tux一样的游戏的呢？ </p>
 <p>The main reason should be two inventions here: OpenGL and SDL. </p>

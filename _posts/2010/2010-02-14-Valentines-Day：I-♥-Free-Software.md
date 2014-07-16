@@ -4,7 +4,8 @@ title: Valentines Day：I ♥ Free Software
 categories:
 - Diandian
 tags:
-- 精神, 
+- 精神
+
 ---
 <img src="http://m1.img.srcdd.com/farm4/d/2012/0627/10/D2BEF50E60619F68254E610109132BA1_B500_900_500_83.PNG" />
 <br />

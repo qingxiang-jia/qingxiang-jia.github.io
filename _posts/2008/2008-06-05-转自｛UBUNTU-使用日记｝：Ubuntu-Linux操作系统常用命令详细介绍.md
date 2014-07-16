@@ -4,7 +4,8 @@ title: 转自｛UBUNTU 使用日记｝：Ubuntu Linux操作系统常用命令详
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 Udo apt－get install 软件名 安装软件命令
 <br />

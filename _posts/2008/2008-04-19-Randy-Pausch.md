@@ -4,7 +4,8 @@ title: Randy Pausch
 categories:
 - Diandian
 tags:
-- 精神, 
+- 精神
+
 ---
 去年就被他感动了，上次医生说他手术很成功，可以过圣诞节，现在，愚人节都过了，我很感动，好人，还活着。去兰迪教授的网页上看了他的“day-by-day update”，摘了一些过来。
 <br />

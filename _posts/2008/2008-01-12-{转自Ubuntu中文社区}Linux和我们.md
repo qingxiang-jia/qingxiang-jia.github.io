@@ -4,7 +4,8 @@ title: {转自Ubuntu中文社区}Linux和我们
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 1. 不要当“传教士”
 <br />

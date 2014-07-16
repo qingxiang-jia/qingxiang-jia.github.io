@@ -4,7 +4,8 @@ title: 一些美国学生对太平洋路德大学的评论(四){内容转自：S
 categories:
 - Diandian
 tags:
-- 日常生活, 
+- 日常生活
+
 ---
 <strong><a href="http://www.studentsreview.com/undergraduate.php3?UID=1457&amp;PID=58&amp;MAJOR_NAME=Political%20Science&amp;d_name=Pacific%20Lutheran%20University&amp;d_short=PLU"><u>Political Science</u></a></strong>&nbsp;
 <a href="http://www.studentsreview.com/WA/PLU_comments.html?page=2&amp;type=&amp;d_school=Pacific%20Lutheran%20University#"><img src="http://m2.img.srcdd.com/farm4/81/6E228FAAA70903F077B8367DD9AA5251_12_12.GIF" /></a> Major

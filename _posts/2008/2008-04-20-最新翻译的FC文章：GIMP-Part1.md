@@ -4,7 +4,8 @@ title: 最新翻译的FC文章：GIMP-Part1
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 翻译：Lee
 <br />翻译状态：100%（完成）

@@ -4,7 +4,8 @@ title: MATH 356 Final Project
 categories:
 - Diandian
 tags:
-- 课内学习, 
+- 课内学习
+
 ---
 <p>Numerical Analysis 的期末论文。用LaTeX写的。一句话讲清楚整个论文的目的：通过给出的点生成最符合这些点的函数。就是电子表格的“Linear/Quadratic/... Fit”。</p>
 <p><img src="http://m1.img.srcdd.com/farm4/d/2012/0627/10/A7D13661758D6E00127E153AF6785684_B500_900_471_608.PNG" /></p>

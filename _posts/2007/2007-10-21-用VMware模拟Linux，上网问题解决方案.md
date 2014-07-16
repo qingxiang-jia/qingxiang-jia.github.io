@@ -4,7 +4,8 @@ title: 用VMware模拟Linux，上网问题解决方案
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 很多时候用VM虚拟机装Kubuntu等的时候并不能顺利地上网，这里我找到了几个方法和分别适应的情况：
 <br />

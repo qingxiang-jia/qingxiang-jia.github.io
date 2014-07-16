@@ -4,7 +4,9 @@ title: Mac 下的 GoAgent 配置
 categories:
 - Diandian
 tags:
-- 计算机技术, 网络, 
+- 计算机技术
+- 网络
+
 ---
 <ol class="edui-filter-decimal">
  <li><p>按照 GoAgent 的配置要求把该做的都做好。</p></li>

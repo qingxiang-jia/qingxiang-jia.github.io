@@ -4,7 +4,8 @@ title: 解决Ubuntu（Kbuntu）9.04 FLASH 乱码（方框）
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 网上流行的方法（有效、正确）
 <br />

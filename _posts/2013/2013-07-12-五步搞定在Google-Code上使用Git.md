@@ -4,7 +4,12 @@ title: 五步搞定在Google Code上使用Git
 categories:
 - Diandian
 tags:
-- Linux, 网络, 计算机技术, Google, Python, 
+- Linux
+- 网络
+- 计算机技术
+- Google
+- Python
+
 ---
 <p>网上有很多教程，但是很多都没有结合国情，那就是我们用GoAgent配合Git使用Google Code的代码托管。</p>
 <p>第零步：没安装git的安装git，我用Mint，所以是sudo apt-get install git<br /></p>

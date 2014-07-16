@@ -4,7 +4,8 @@ title: 翻译的文章《（FC26我的故事）ILikeTheChallenge》
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>ILikeTheChallenge</p>
 <p>A few months ago, I bought a laptop without an operating system. I installed Ubuntu 8.04 (Hardy Heron), which I received from shipit.ubuntu.com a few weeks earlier.</p>

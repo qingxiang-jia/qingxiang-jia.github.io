@@ -4,7 +4,8 @@ title: YouTubeCN
 categories:
 - Diandian
 tags:
-- 精神, 
+- 精神
+
 ---
 今天在某不和谐博客上看到了一个神奇的网站，叫做YouTubeCN，难道在谷歌退出中国之际，旗下子公司竞推出中国和谐版？
 <br />

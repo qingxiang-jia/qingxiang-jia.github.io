@@ -4,7 +4,8 @@ title: Last 2 Weeks of Earthquakes
 categories:
 - Diandian
 tags:
-- 日常生活, 
+- 日常生活
+
 ---
 <a href="http://earthquake.usgs.gov/template/images2/usgs.jpg" target="_blank"><img alt="http://earthquake.usgs.gov/template/images2/usgs.jpg" src="http://m1.img.srcdd.com/farm3/d/2012/0306/12/DOWNLOADFAILAAAAAAAAAAAAAAAAAAAA_B500_900_200_80.PNG" /></a>数据来自美国地震局。（请把看到的时间+8就是中国的时间）
 <br /> Last 2 Weeks of Earthquakes

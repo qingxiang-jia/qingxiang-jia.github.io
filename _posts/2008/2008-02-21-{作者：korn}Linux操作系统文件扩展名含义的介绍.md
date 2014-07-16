@@ -4,7 +4,8 @@ title: {作者：korn}Linux操作系统文件扩展名含义的介绍
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>一般linux文件是没有扩展 名的。linux文件能否执行，与他的第一列的10个属性有关，与文件名一点关系都没有。在windows系统中，文件的扩展名非常重要，执行文件的扩展 名通常是.exe\.com\.bat等，而在linux中，只要属性中有x，那么就表示这个文件可以执行。</p>
 <p> </p>

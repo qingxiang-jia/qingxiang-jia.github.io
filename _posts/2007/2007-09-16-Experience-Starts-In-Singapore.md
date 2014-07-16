@@ -4,7 +4,8 @@ title: Experience Starts In Singapore
 categories:
 - Diandian
 tags:
-- ef英国之行, 
+- ef英国之行
+
 ---
 <p><a href="http://longstation.yo2.cn/wp-content/uploads/66/6618/2007/09/090207-1111-experiences1.jpg" target="_blank"><img alt="http://longstation.yo2.cn/wp-content/uploads/66/6618/2007/09/090207-1111-experiences1.jpg" src="http://m1.img.srcdd.com/farm3/d/2012/0306/12/DOWNLOADFAILAAAAAAAAAAAAAAAAAAAA_B500_900_200_80.PNG" /></a>Experience Stares In Singapore，是的，我的旅程开始了。这是我拍的第一张照片。在此之前，我们已经经历了从成都到北京，再出关。我真是幸运，其中北京团（由黑龙江和北京的同学组成）的好几个人签证有问题，楞是从海关（北京国际机场）被扣下来了，但是我们必须赶路，否则飞机该延误了。过海关的时候已经很晚了，大概是11点钟，当然是晚上。之后，我们就在北京机场逗留，最爽的是又有PC体验店，具体是DELL还是LENOVO已经记不清了，或者是宏基？又是看电视又是乱逛，和周振彧到处走，又何陈楠宇、柯瑞琪一起逛，看着飞机一起一落，一批批人像大肠里的大便一样，逐步被排除肛门，对不起，比较恶心，可自己就是出不去，什么时候才到时间啊，我模糊记得似乎是11点半的飞机，这次是准时赶上的。肚子里的25元KFC还正在被消化。 </p>
 <p>终于等到了登机。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>

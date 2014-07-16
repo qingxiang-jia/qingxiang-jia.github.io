@@ -4,7 +4,8 @@ title: 我和荷笠联合翻译的文章：CProgramming-Part2 (A)
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>翻译：Lee <br />翻译状态：Working<br />校对：<br />校对状态：<br />二校：<br />二校状态：<br /></p>
 <p>CProgramming-Part2</p>

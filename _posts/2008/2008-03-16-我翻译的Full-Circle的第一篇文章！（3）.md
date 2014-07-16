@@ -4,7 +4,8 @@ title: 我翻译的Full Circle的第一篇文章！（3）
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>Recently , we have seen some companies going with Linux for their mobile OS'es. </p>
 <p>最近，我们看到一些公司为了他们的手机操作系统开始和Linux走到一起了， </p>

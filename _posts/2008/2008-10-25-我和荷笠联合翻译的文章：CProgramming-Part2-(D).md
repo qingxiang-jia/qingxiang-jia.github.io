@@ -4,7 +4,8 @@ title: 我和荷笠联合翻译的文章：CProgramming-Part2 (D)
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>练习<br />重写循环中的main主函数，使之成为一个while循环<br />将isPrime（）函数中的if…else if…else语句重写为switch…case语句<br />将ternary (condition)?value1:value2三目运算重写为if…else语句<br />将主函数中的if…else改用三目运算符<br />将isPrime函数替换为一个isOdd函数，使程序在得到一个整数是奇数时返回第一步<br />设计并编写一个小的应用程序，实现输出第n位斐波那契数列（），n为易变的<br /><br /></p>
 <p> </p>

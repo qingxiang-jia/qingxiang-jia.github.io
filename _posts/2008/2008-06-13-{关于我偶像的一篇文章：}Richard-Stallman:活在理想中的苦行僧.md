@@ -4,7 +4,8 @@ title: {关于我偶像的一篇文章：}Richard Stallman:活在理想中的苦
 categories:
 - Diandian
 tags:
-- 精神, 
+- 精神
+
 ---
 新闻来源:www.linuxeden.com
 <br />Richard Stallman(Richard Matthew Stallman, RMS)，生于1953年，自由软件黑客和活动家，自由软件基金会(Free Software Foundation)创始人及主席，GNU工程创始人，美国工程院院士，GNU General Public License(GNU GPL)作者。Stallman被世人称为“最后一个真正黑客”。

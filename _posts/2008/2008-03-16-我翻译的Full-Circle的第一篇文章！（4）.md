@@ -4,7 +4,8 @@ title: 我翻译的Full Circle的第一篇文章！（4）
 categories:
 - Diandian
 tags:
-- Linux, 
+- Linux
+
 ---
 <p>我建议你用ADL。我可以证明，当我需要的时候，我在我的桌面环境进行开发，我只需要住那换到移动SDK，编译，生成一个Debian ARM的包，然后在移动设备上测试就可以了。（诺基亚N770）这样可以节省你宝贵的调试时间。</p>
 <p> </p>

@@ -4,7 +4,8 @@ title: Calculus Project
 categories:
 - Diandian
 tags:
-- 课内学习, 
+- 课内学习
+
 ---
 <p>微积分的应用的篇文章，昨晚上3:25写完的。时间安排有误，以后尽量避免。</p>
 <p><img src="http://m2.img.srcdd.com/farm4/d/2012/0627/10/C421B7F53F1419C29D593117B66E20E6_B500_900_500_641.PNG" /></p>
