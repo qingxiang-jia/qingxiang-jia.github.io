@@ -4,9 +4,9 @@
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 <!-- end of baidu JIA -->
 
-<!-- Duoshuo Comment BEGIN -->
-	<div class="ds-thread"></div>
-	<div id="disqus_thread"></div>
+<!-- Duoshuo/Disquso Comment BEGIN -->
+<div class="ds-thread"></div>
+<div id="disqus_thread"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"qingxiang-jia"};
 var disqus_shortname = 'longstation';
@@ -20,7 +20,7 @@ var disqus_shortname = 'longstation';
 	{
 		disqus();
 	}
-	function duoshuo() 
+	function duoshuo() // Modified from the universal Duoshuo code
 	{
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
@@ -29,7 +29,7 @@ var disqus_shortname = 'longstation';
 		(document.getElementsByTagName('head')[0] 
 		|| document.getElementsByTagName('body')[0]).appendChild(ds);
 	}
-	function disqus()
+	function disqus() // Modified from the universal Disqus code
 	{
 		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -38,21 +38,6 @@ var disqus_shortname = 'longstation';
 	</script>
 	<noscript><br>Qingxiang: Please enable JavaScript to view the comment system.</br>
 	<br>老贾提示：请启用 JavaScript 以显示评论系统</br></noscript>
-<!-- Duoshuo Comment END -->
-
-<!-- Duoshuo Backup BEGIN-->
-<!-- <div class="ds-thread"></div>
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"qingxiang-jia"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = 'http://static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		|| document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script> -->
-<!-- Duoshuo Backup END -->
+<!-- Duoshuo/Disqus Comment END -->
 </section>
 
