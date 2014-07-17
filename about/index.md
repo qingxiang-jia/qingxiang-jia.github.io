@@ -19,6 +19,6 @@ Linkedin: [Qingxiang Jia @ Linkedin](http://www.linkedin.com/pub/qingxiang-jia/3
 
 ### My projects on Google Code
 
-Diandian2Jekyll: [github.com/qingxiang-jia/diandian2Jekyll](https://github.com/qingxiang-jia/diandian2Jekyll)
+Diandian2Jekyll: [github.com/qingxiang-jia/diandian2Jekyll](https://github.com/qingxiang-jia/diandian2Jekyll)  
 Smart Annotator: [code.google.com/p/smart-annotator/](https://code.google.com/p/smart-annotator/)  
 Geeky Shutdown: [code.google.com/p/geeky-shutdown/](https://code.google.com/p/geeky-shutdown/)
