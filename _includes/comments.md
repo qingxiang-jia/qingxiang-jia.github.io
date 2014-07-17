@@ -6,6 +6,7 @@
 
 <!-- Duoshuo Comment BEGIN -->
 	<div class="ds-thread"></div>
+	<div id="disqus_thread"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"qingxiang-jia"};
 var disqus_shortname = 'longstation';
