@@ -8,15 +8,18 @@
 	<div class="ds-thread"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"qingxiang-jia"};
+var disqus_shortname = 'longstation';
+	// Call Duoshuo's function if this page is on githis.com .
 	if(location.host == "longstation.githis.com")
-	{
-		dsFunc();
+	{ 
+		duoshuo();
 	}
-	else
+	// Call Disqus's fuction if this page is on github.io .
+	else if (location.host == "qingxiang-jia.github.io")
 	{
-		console.log("current domain is "+location.host);
+		disqus();
 	}
-	function dsFunc() 
+	function duoshuo() 
 	{
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
@@ -25,7 +28,15 @@ var duoshuoQuery = {short_name:"qingxiang-jia"};
 		(document.getElementsByTagName('head')[0] 
 		|| document.getElementsByTagName('body')[0]).appendChild(ds);
 	}
+	function disqus()
+	{
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	}
 	</script>
+	<noscript><br>Qingxiang: Please enable JavaScript to view the comment system.</br>
+	<br>老贾提示：请启用 JavaScript 以显示评论系统</br></noscript>
 <!-- Duoshuo Comment END -->
 
 <!-- Duoshuo Backup BEGIN-->
