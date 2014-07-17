@@ -8,7 +8,11 @@
 	<div class="ds-thread"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"qingxiang-jia"};
-	(function() {
+	if(location.host == "longstation.githis.com")
+	{
+		dsFunc();
+	}
+	(function dsFunc() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
 		ds.src = 'http://static.duoshuo.com/embed.js';
@@ -18,5 +22,20 @@ var duoshuoQuery = {short_name:"qingxiang-jia"};
 	})();
 	</script>
 <!-- Duoshuo Comment END -->
+
+<!-- Duoshuo Backup BEGIN-->
+<!-- <div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"qingxiang-jia"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script> -->
+<!-- Duoshuo Backup END -->
 </section>
 
