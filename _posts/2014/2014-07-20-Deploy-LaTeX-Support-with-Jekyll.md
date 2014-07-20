@@ -16,7 +16,7 @@ That's it. Yes, only one step. [Link to include](http://docs.mathjax.org/en/late
 As long as the ```.js``` is included, you can use MathJax. I put it in ```\_layouts\default.html```.
 
 `\[
-\LaTeX
+E = mc^2
 \]`
 
 
