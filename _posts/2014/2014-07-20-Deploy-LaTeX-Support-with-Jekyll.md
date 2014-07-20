@@ -9,15 +9,13 @@ tags:
 ---
 Although I usually don't have many formula to write, but there comes time where you desprately need formula display. I like the formulas on Math Exchange. Here is how to do it with Jekyll: 
 
-->Step 1. Include the CDN link of the ```.js``` file.<-
+->Step 1. Include the CDN link of the `.js` file.<-
 
-That's it. Yes, only one step. [Link to include](http://docs.mathjax.org/en/latest/start.html#mathjax-cdn)
+That's it. Yes, only one step. [Link to include](http://docs.mathjax.org/en/latest/start.html#mathjax-cdn) However, there is one caveat; if you are using `rdiscount`, switch it to `kramdown` (in `_config.yml` file). Initially I didn't realize the difference, until I found `$$\LaTeX$$` will be displayed correctly but not `$$a^2 + b^2 = c^2$$`.
 
-As long as the ```.js``` is included, you can use MathJax. I put it in ```\_layouts\default.html```.
+As long as the `.js` is included, you can use MathJax. I put it in `\_layouts\default.html`.
 
-\begin{equation}
-E = mc^2
-\end{equation}
+```\\[\LaTeX\\]``` will take an entire line, like this
+\\[\LaTeX\\]
 
-
-
+and ```$$\LaTeX$$``` will be inline, like this $$\LaTeX$$.

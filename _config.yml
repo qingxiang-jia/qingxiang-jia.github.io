@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: kramdown
 permalink: /:year/:month/:title/
 url: http://qingxiang-jia.github.io
 author: Qingxiang Jia
