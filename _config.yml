@@ -2,5 +2,5 @@ markdown: kramdown
 permalink: /:year/:month/:title/
 url: http://qingxiang-jia.github.io
 author: Qingxiang Jia
-pygments: true
+highlighter: true
 paginate: 24

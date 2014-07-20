@@ -152,12 +152,22 @@ pre {
     margin: 0 0 24px;
 	background-color: #f3f3f3;
 }
-p code {
+/*p code {
     font-family: monospace;
     font-size: 14px;
     border: 1px solid #edebea;
 	padding: 1px 5px;
 	background-color: #EEE;
+}*/
+/*Above: original code block style*/
+/*Below: my own code block style*/
+p code {
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    overflow: auto;
+    padding: 1px 5px;
+    border-radius: 3px;
 }
 hr {
     border: 0;
