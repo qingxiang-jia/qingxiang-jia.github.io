@@ -18,4 +18,4 @@ As long as the `.js` is included, you can use MathJax. I put it in `\_layouts\de
 ```\\[\LaTeX\\]``` will take an entire line, like this
 \\[\LaTeX\\]
 
-and ```$$\LaTeX$$``` will be inline, like this $$\LaTeX$$.
+and ```$$\LaTeX$$``` will be inline, like this $$\LaTeX$$.
