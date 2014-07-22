@@ -35,7 +35,7 @@ This is a regular ajax get request. The difference is that there are `jsonp` and
 
 For example, if I request a JSON object through `http://localhost:1990/iWantSomeData`, the server will return 
 <pre><code class="language-javascript">callbackFunc({"OS":[
-    {"name":"Ubuntu", "vendor":"Ca    nonical"}, 
+    {"name":"Ubuntu", "vendor":"Canonical"}, 
     {"name":"OS X", "vendor":"Apple"},
     {"name":"Windows", "vendor":"Microsoft"}
 ]})</code></pre>
