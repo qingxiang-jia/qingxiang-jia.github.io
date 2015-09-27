@@ -1,0 +1,29 @@
+# Site settings
+title: Longstation
+author: Qingxiang Jia
+header-img: img/home-bg.png
+email: ybjqx3340@gmail.com
+description: "老贾车间"
+baseurl: ""
+url: "http://qingxiang-jia.github.io"
+twitter_username: jqx1990
+github_username:  qingxiang-jia
+facebook_username:  qingxiang.jia
+zhihu_username: qingxiang.jia
+
+# Build settings
+markdown: kramdown 
+
+# markdown: redcarpet
+# redcarpet can auto highlight code, but the lack of header-id make the catalog impossible 
+
+highlighter: pygments
+permalink: pretty
+paginate: 20
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# use Github Flavored Markdown !important
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+
+kramdown:
+  input: GFM
