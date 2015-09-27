@@ -1,6 +1,0 @@
-markdown: kramdown
-permalink: /:year/:month/:title/
-url: http://qingxiang-jia.github.io
-author: Qingxiang Jia
-highlighter: true
-paginate: 24
