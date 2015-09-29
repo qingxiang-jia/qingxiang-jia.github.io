@@ -2,7 +2,6 @@
 layout: post
 title: JSONP Front & Backend
 tags:
-- 计算机技术
 - JavaScript
 - Java
 
