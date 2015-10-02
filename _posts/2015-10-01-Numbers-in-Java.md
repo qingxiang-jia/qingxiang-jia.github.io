@@ -13,4 +13,6 @@ Yes. Because the `hashcode` method is implemeted as [follows](http://grepcode.co
 return (int)(value ^ (value >>> 32));
 ```
 So only the value of that Number object matters, as opposed to the ["regular" implementation](http://grepcode.com/file/repository.grepcode.com/java/root/jdk/openjdk/8u40-b25/java/lang/Object.java#Object.hashCode%28%29): 
+
 > This is typically implemented by converting the internal address of the object into an integer...
+
