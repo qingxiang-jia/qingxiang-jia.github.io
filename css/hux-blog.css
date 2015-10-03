@@ -104,6 +104,13 @@ hr.small {
   line-height: 2;
   margin-top: 20px;
 }
+/* Qingxiang's customization on typesetting */
+.post-container p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  text-align: justify;
+}
 @media only screen and (max-width: 767px) {
   .navbar-default .navbar-collapse {
     border: none;
