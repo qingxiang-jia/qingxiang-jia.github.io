@@ -110,6 +110,10 @@ hr.small {
   -moz-hyphens: auto;
   hyphens: auto;
   text-align: justify;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 }
 @media only screen and (max-width: 767px) {
   .navbar-default .navbar-collapse {
