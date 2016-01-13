@@ -2,7 +2,8 @@
 layout: post
 title: An Infinite GC Problem
 tags:
-- Garbage Collection, Java
+- Garbage Collection 
+- Java
 
 ---
 Recently in work, I encountered an interesting GC (garbage collection) related problem. We have a console like application, when a user logs in, the program loads the corresponding history file so that the user is able to look for "recent commands". However, when the history file is very large (say, 200 MB), this loading process triggers GC. This sounds right because the file is very large, reading it all into the memory will create a memory shortage and thus triggers the GC.
