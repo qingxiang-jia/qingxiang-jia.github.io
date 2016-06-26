@@ -10,7 +10,7 @@ A country has denominations: `d1, d2, d3, ..., dk` (in unit, say, dollar). You a
 
 `C[p] = 1 + C[p-x]`
 
-Initially I thought we can use greedy algorithm to do it. We try the largest denomination that is less than or equal to `n` repeatedly, and subtract that amount from `n`; eventually `n` will be 0 and we are done. This is simple and intuitive. However, this does not work every time. For example, say, I have the following denominations: `[1, 5, 10, 20, 25]`. Given 40, the greedy algorithm will return `[25, 10, 5]`. This is not optimal since we can just do `[20, 20]`. Then I found Dr. Cliff Stein's [slides](www.columbia.edu/~cs2035/courses/csor4231.F07/dynamic.pdf) which gave the above transition function.
+Initially I thought we can use greedy algorithm to do it. We try the largest denomination that is less than or equal to `n` repeatedly, and subtract that amount from `n`; eventually `n` will be 0 and we are done. This is simple and intuitive. However, this does not work every time. For example, say, I have the following denominations: `[1, 5, 10, 20, 25]`. Given 40, the greedy algorithm will return `[25, 10, 5]`. This is not optimal since we can just do `[20, 20]`. Then I found Dr. Cliff Stein's [slides](http://www.columbia.edu/~cs2035/courses/csor4231.F07/dynamic.pdf) which gave the above transition function.
 
 Instead of considering what are the banknotes that will be returned, we take one step back, thinking what's the minimum number of banknotes needed. In the above equation, `C[p]` represents the minimum banknotes needed for `p` dollars. So, `C[0]` is 0 as if there is no money, there is no change needed. `C[p]` is just `C[p-x]` plus `1`. The equation says: the minimum number of banknotes needed for `p` dollars, can be constructed from `C[p-x]` if we know what `x` is. `x` is one of the denominations. Since we don't know which one is appropriate here, we try all of them. This is the inner loop. For `n` from `1` to `n`, we run the inner loop, and when it goes to `n`, we have our solution.
 
@@ -38,7 +38,7 @@ public void change(int n, int[] d) {
       remain -= d[S[remain]];
     }
     System.out.println(soln.toString());
-  }
+}
 ```
 
 Above is my Java solution to this question. `C`, short for Change, stores the minimum number of banknotes needed for the cell number of dollars. `S`, short for Solution, it records which denomination we should use for the cell number of dollars. To make sense of the above code, let's go through an example.
