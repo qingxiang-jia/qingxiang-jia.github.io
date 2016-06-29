@@ -25,5 +25,7 @@ kramdown:
 
 highlighter: rouge
 permalink: pretty
+# Gems
+gems: [jekyll-paginate]
 paginate: 20
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
