@@ -16,23 +16,28 @@ Here is my thought process. We need some kind of stucture to capture what we alr
 public int lis(int[] seq) {
     int[] M = new int[seq.length];
     Arrays.fill(M, 1);
+    int max = Integer.MIN_VALUE;
     for (int i = 0; i < seq.length; i++) {
       for (int j = 0; j < i; j++) {
         if (seq[j] < seq[i] && M[j] + 1 > M[i]) {
           M[i] = M[j] + 1;
         }
       }
+      if (M[i] > max) {
+        max = M[i];
+      }
     }
-    return M[M.length - 1];
- }
+    return max;
+}
 ```
 
-Here is two quick tests.
+Here is three quick tests.
 
 ```
 public static void main(String...args) {
     Solution s = new Solution();
-    System.out.println(s.lis(new int[] {2, 5, 3}));
-    System.out.println(s.lis(new int[] {4, 1, 0, 2, 5, 3}));
+    System.out.println(s.lis(new int[] {2, 5, 3})); // 2
+    System.out.println(s.lis(new int[] {4, 1, 0, 2, 5, 3})); // 3
+    System.out.println(s.lis(new int[] {1, 2, 3, 2, 1})); // 3
 }
 ```
