@@ -14,6 +14,31 @@ The key is to realize this transition function: `M[i][w] = max(M[i-1][w], value[
 
 Below is my Java solution, it's not the shortest one, but it is better for seeing the thought process than the shortest solution.
 
+```
+public int knapsack(int[] weight, int[] value, int maxWeight) {
+    int items = weight.length;
+    int[][] M = new int[items][maxWeight+1];
+    /* M[i][w] represents maximum value that can be attained if the maximum weight is w and items are chosen from 0...i */
+    for (int i = 0; i < items; i++) {
+      for (int w = 0; w <= maxWeight; w++) {
+        if (w - weight[i] >= 0) { // if at limit w, I can take ith item
+          if (i == 0) { // if i == 0, i-1 will be -1, so, the only thing it can do is to match the weight limit against i(0)'s weight
+            M[i][w] = value[i]; // (if j == 0, it's just 0 since only zero weight is allowed)
+          } else {
+            M[i][w] = max(M[i-1][w], value[i] + M[i-1][w-weight[i]]);
+          }
+        } else { // at limit w, I can't take ith item
+          if (i > 0) { // if i == 0, meaning that I can only take the 0th item, I will just get zero since weight[0] is too large.
+            M[i][w] = M[i-1][w];
+          }
+        }
+      }
+    }
+    return M[items-1][maxWeight];
+}
+
+```
+
 In my code, I made everything explicit. For `M`, it's dimension is `[items][maxWeight+1]`. This is where my solution differs most from the shorter solution. For me, since the items are given in an array, the first item will be the 0th. Some solution starts at 1, that means you need to offset this in your transition function which makes it less obvious. So, the first dimension for `M` is items. For the second part of the dimension, I chose to use `maxWeight+1` as it makes more sense for me to allow the bag to reach exactly that limit (instead of one less).
 
 Now, many popular solutions initialize `M` before the nested loop. That's fine, it makes the loop nicer but I prefer to do everything in the loop as I want to inclose all the core algorithm together. When traversing `M`, each time, there are several decisions to make.
@@ -73,6 +98,7 @@ First, `i=0`, we are looking at the situation where the only choice we have is i
 
 Next, `w` increases to 1, and we now can stuff in item 0, so we have:
 
+```
    0  1  2  3
   +--+--+--+--+
 0 |0 |  |  |  |
@@ -87,9 +113,11 @@ Next, `w` increases to 1, and we now can stuff in item 0, so we have:
   +--+--+--+--+
 5 |  |  |  |  |
   +--+--+--+--+
+```
 
 `w` increases to 2, but we don't have any choice but to pick item 0. So is the next three steps, which I will skip for this reason.
 
+```
    0  1  2  3
   +--+--+--+--+
 0 |0 |  |  |  |
@@ -104,9 +132,11 @@ Next, `w` increases to 1, and we now can stuff in item 0, so we have:
   +--+--+--+--+
 5 |10|  |  |  |
   +--+--+--+--+
+```
 
 Now `w` returns to 0, and i increases to 1, we now have item `0..1` in hand. But since w is 0, nothing can be done. We have:
 
+```
    0  1  2  3
   +--+--+--+--+
 0 |0 |0 |  |  |
@@ -121,9 +151,11 @@ Now `w` returns to 0, and i increases to 1, we now have item `0..1` in hand. But
   +--+--+--+--+
 5 |10|  |  |  |
   +--+--+--+--+
+```
 
 The weight limit `w` increases to 1 and meanwhile we have two choices, item 0 and 1. Since `w=1`, we can take item 1, so we are at the transition function, comparing whether the previous solution (`M[i-1][w]`, i.e. not taking item 1) or current solution (`value[i] + M[i-1][w-weight[i]]`, i.e., take item 1) is larger. In this case, the previous solution is `M[0][1]`, 10 and the current solution is `value[1] + M[0][0]`, so current solution (20) is better than the previous solution (10). The table becomes the following:
 
+```
    0  1  2  3
   +--+--+--+--+
 0 |0 |0 |  |  |
@@ -138,9 +170,11 @@ The weight limit `w` increases to 1 and meanwhile we have two choices, item 0 an
   +--+--+--+--+
 5 |10|  |  |  |
   +--+--+--+--+
+```
 
 `w` increases to 2, we still have item 0 and 1. Again, because `1 > weight[1]`, we are at the transition function and considering whether the previous solution (10) or current solution (`value[1] + M[0][1] = 20`) is better.
 
+```
    0  1  2  3
   +--+--+--+--+
 0 |0 |0 |  |  |
@@ -155,6 +189,7 @@ The weight limit `w` increases to 1 and meanwhile we have two choices, item 0 an
   +--+--+--+--+
 5 |10|  |  |  |
   +--+--+--+--+
+```
 
 Now, nothing has changed except that `w` has increased to 2. Because `2-weight[1] >= 0`, we are again at the transition function. Now, the previous solution is `M[0][2]`, which is 10. The current solution is `value[1] + M[0][1]`, which is 30, so we take 30. This will be true for the next 3 steps as well because we only have item 0 and 1 at hand, the sum of the value of them is 30. For this reason, we will skip the next 4 steps.
 
