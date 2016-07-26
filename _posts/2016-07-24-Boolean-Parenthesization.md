@@ -92,3 +92,39 @@ In the third loop, the only subexpression it considers is the entire expression 
 This is a very classical example of dynamic programming, although it is relatively complicated.
 
 The following is my Java solution. Usually I will do a dry run to just illustrate the algorithm, but this time I think the above analysis does the same thing.
+
+```
+public int countParenthesization(char operand[], char operator[]) {
+    int n = operand.length;
+    int T[][] = new int[n][n];
+    int F[][] = new int[n][n];
+
+    for (int i = 0; i < n; i++) {
+      if (operand[i] == 'T') {
+        T[i][i] = 1;
+      } else {
+        F[i][i] = 1;
+      }
+    }
+
+    for (int initJ = 1; initJ < n; initJ++) {
+      for (int i = 0, j = initJ; j < n; i++, j++) {
+        for (int k = i; k < j; k++) {
+          int total_ik = T[i][k] + F[i][k];
+          int total_kj = T[k+1][j] + F[k+1][j];
+          if (operator[k] == '&') {
+            T[i][j] += T[i][k] * T[k+1][j];
+            F[i][j] += total_ik * total_kj - T[i][k] * T[k+1][j];
+          } else if (operator[k] == '|') {
+            T[i][j] += total_ik * total_kj - F[i][k] * F[k+1][j];
+            F[i][j] += F[i][k] * F[k+1][j];
+          } else if (operator[k] == '^') {
+            T[i][j] += F[i][k] * T[k+1][j] + T[i][k] * F[k+1][j];
+            F[i][j] += T[i][k] * T[k+1][j] + F[i][k] * F[k+1][j];
+          }
+        }
+      }
+    }
+    return T[0][n-1];
+ }
+```
