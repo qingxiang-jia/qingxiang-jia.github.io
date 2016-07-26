@@ -64,7 +64,6 @@ private static final int REPLACE = 1, INSERT = 1, DELETE = 1;
         }
       }
     }
-    printTable(D);
     return D[A.length()][B.length()];
  }
 ```
