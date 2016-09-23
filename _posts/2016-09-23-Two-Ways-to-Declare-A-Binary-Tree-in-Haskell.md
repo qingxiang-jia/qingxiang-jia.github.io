@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sequence Alignment
+title: Two Ways to Declare A Binary Tree in Haskell
 tags:
 - Haskell
 
