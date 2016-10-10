@@ -2,7 +2,7 @@
 layout: post
 title: Intuition of isZero
 tags:
-- Lambda Calculus
+- λ
 
 ---
 
