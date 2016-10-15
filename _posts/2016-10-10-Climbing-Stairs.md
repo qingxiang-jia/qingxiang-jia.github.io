@@ -2,6 +2,7 @@
 layout: post
 title: Climbing Stairs
 tags:
+- Algorithm
 - Dynamic Programming
 
 ---

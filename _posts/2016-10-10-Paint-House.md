@@ -2,6 +2,7 @@
 layout: post
 title: Paint House
 tags:
+- Algorithm
 - Dynamic Programming
 
 ---
