@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on Longstation</title>
+    <link>http://localhost:1313/categories/learning/</link>
+    <description>Recent content in Learning on Longstation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intuition of isZero</title>
+      <link>http://localhost:1313/post/intuition-of-iszero/</link>
+      <pubDate>Thu, 29 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/intuition-of-iszero/</guid>
+      <description>Before reading, make sure you understand how positive integers are represented in lambda calculus.
+We want isZero to return true for zero (λ f x. x) and false for all other numbers.
+isZero = λ n. n (λ z. false) true  Alternatively, you can write is as:
+isZero n = n (λ z. false) true  So what is zero? Zero is λ f x. x, a function that takes two parameters f and x, and return x.</description>
+    </item>
+    
+    <item>
+      <title>Two Ways to Declare A Binary Tree in Haskell</title>
+      <link>http://localhost:1313/post/two-ways-to-declare-a-binary-tree-in-haskell/</link>
+      <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/two-ways-to-declare-a-binary-tree-in-haskell/</guid>
+      <description>I am about to take Professor Jhala&amp;rsquo;s class and now I am learning Haskell. One thing I find interesting is how you can define a recursive data structure in two different ways.
+Method 1
+data Tree a = Leaf a | Branch (Tree a) (Tree a)  Method 2
+data Tree a = EmptyTree | Node a (Tree a) (Tree a)  In short, method 2 is just method 1 with the &amp;ldquo;|&amp;rdquo; moved one left.</description>
+    </item>
+    
+    <item>
+      <title>A Benchmark Flaw</title>
+      <link>http://localhost:1313/post/a-benchmark-flaw/</link>
+      <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/a-benchmark-flaw/</guid>
+      <description>Would declaring a String variable and then using it run faster or just using a String literal run faster? I had this in mind, and made the following test.
+public static void main(String[] args) { String a = &amp;quot;kNuZbcI4No&amp;quot;; Path path = Paths.get(&amp;quot;10000.txt&amp;quot;); long start2 = System.currentTimeMillis(); try (Stream&amp;lt;String&amp;gt; lines = Files.lines(path)) { lines.forEach(s -&amp;gt; s.equalsIgnoreCase(&amp;quot;5GxtHQS42y&amp;quot;)); } catch (IOException e) { System.out.println(e); } long end2 = System.currentTimeMillis(); long start1 = System.</description>
+    </item>
+    
+    <item>
+      <title>JSONP Front &amp; Backend</title>
+      <link>http://localhost:1313/post/jsonp-front-and-backend/</link>
+      <pubDate>Tue, 22 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/jsonp-front-and-backend/</guid>
+      <description>Single Origin Policy It means the elements in cs.columbia.edu can only request resources in its domain or its sub domains, such as clic.cs.columbia.edu. But sometimes a web page on clic.cs.columbia.edu may need to request resources on cs.mit.edu. There are many ways to deal with this problem, but through out my internship project, I found JSONP is the most convenient way.
+How to Bypass It? If single origin policy is really the case, why you can see an image in a web page that may be hosted on some other server?</description>
+    </item>
+    
+  </channel>
+</rss>

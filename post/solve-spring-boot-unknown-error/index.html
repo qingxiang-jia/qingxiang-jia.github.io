@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Solve Spring Boot Unknown Error - Longstation</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="longstation" />
+  <meta name="description" content="I was working on a short Spring Boot project. However, on my computer, no matter what I tried, it couldn&amp;rsquo;t start and gave me &amp;ldquo;unknown error&amp;rdquo;. The following is the error log:
+Wrong Spring Boot output: 4:01:54 PM: Executing external task &#39;bootRun&#39;... :compileJava UP-TO-DATE :processResources UP-TO-DATE :classes UP-TO-DATE :findMainClass :bootRun . ____ _ __ _ _ /\\ / ___&#39;_ __ _ _(_)_ __ __ _ \ \ \ \ ( ( )\___ | &#39;_ | &#39;_| | &#39;_ \/ _` | \ \ \ \ \\/ ___)| |_)| | | | | || (_| | ) ) ) ) &#39; |____| ." />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/solve-spring-boot-unknown-error/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Solve Spring Boot Unknown Error" />
+<meta property="og:description" content="I was working on a short Spring Boot project. However, on my computer, no matter what I tried, it couldn&rsquo;t start and gave me &ldquo;unknown error&rdquo;. The following is the error log:
+Wrong Spring Boot output: 4:01:54 PM: Executing external task &#39;bootRun&#39;... :compileJava UP-TO-DATE :processResources UP-TO-DATE :classes UP-TO-DATE :findMainClass :bootRun . ____ _ __ _ _ /\\ / ___&#39;_ __ _ _(_)_ __ __ _ \ \ \ \ ( ( )\___ | &#39;_ | &#39;_| | &#39;_ \/ _` | \ \ \ \ \\/ ___)| |_)| | | | | || (_| | ) ) ) ) &#39; |____| ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/solve-spring-boot-unknown-error/" />
+
+
+
+<meta property="article:published_time" content="2016-01-22T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2016-01-22T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Solve Spring Boot Unknown Error">
+<meta itemprop="description" content="I was working on a short Spring Boot project. However, on my computer, no matter what I tried, it couldn&rsquo;t start and gave me &ldquo;unknown error&rdquo;. The following is the error log:
+Wrong Spring Boot output: 4:01:54 PM: Executing external task &#39;bootRun&#39;... :compileJava UP-TO-DATE :processResources UP-TO-DATE :classes UP-TO-DATE :findMainClass :bootRun . ____ _ __ _ _ /\\ / ___&#39;_ __ _ _(_)_ __ __ _ \ \ \ \ ( ( )\___ | &#39;_ | &#39;_| | &#39;_ \/ _` | \ \ \ \ \\/ ___)| |_)| | | | | || (_| | ) ) ) ) &#39; |____| .">
+
+
+<meta itemprop="datePublished" content="2016-01-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2016-01-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="802">
+
+
+
+<meta itemprop="keywords" content="Spring Boot,Java," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Solve Spring Boot Unknown Error"/>
+<meta name="twitter:description" content="I was working on a short Spring Boot project. However, on my computer, no matter what I tried, it couldn&rsquo;t start and gave me &ldquo;unknown error&rdquo;. The following is the error log:
+Wrong Spring Boot output: 4:01:54 PM: Executing external task &#39;bootRun&#39;... :compileJava UP-TO-DATE :processResources UP-TO-DATE :classes UP-TO-DATE :findMainClass :bootRun . ____ _ __ _ _ /\\ / ___&#39;_ __ _ _(_)_ __ __ _ \ \ \ \ ( ( )\___ | &#39;_ | &#39;_| | &#39;_ \/ _` | \ \ \ \ \\/ ___)| |_)| | | | | || (_| | ) ) ) ) &#39; |____| ."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Longstation</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Longstation</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Solve Spring Boot Unknown Error</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2016-01-22 </span>
+        <div class="post-category">
+            
+              <a href="/categories/practicals/"> Practicals </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>I was working on a short Spring Boot project. However, on my computer, no matter what I tried, it couldn&rsquo;t start and gave me &ldquo;unknown error&rdquo;. The following is the error log:</p>
+
+<pre><code>Wrong Spring Boot output:
+
+4:01:54 PM: Executing external task 'bootRun'...
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:findMainClass
+:bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::  (v1.1.2.BUILD-SNAPSHOT)
+
+2015-11-03 16:01:55.386  INFO 5295 --- [           main] com.proj.projApplication             : Starting projApplication on Qingxiangs-MacBook-Pro-proj.local with PID 5295 (/Users/lee/workspace/springboot_gradle_project/build/classes/main started by lee in /Users/lee/workspace/springboot_gradle_project)
+2015-11-03 16:01:55.412  INFO 5295 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@276438c9: startup date [Tue Nov 03 16:01:55 EST 2015]; root of context hierarchy
+2015-11-03 16:01:56.052  INFO 5295 --- [           main] .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 8080
+2015-11-03 16:01:56.191  INFO 5295 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-11-03 16:01:56.191  INFO 5295 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.54
+2015-11-03 16:01:56.466  INFO 5295 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-11-03 16:01:56.467  INFO 5295 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1057 ms
+2015-11-03 16:01:56.535  INFO 5295 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-11-03 16:01:58.739 ERROR 5295 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Failed to stop end point associated with ProtocolHandler [&quot;http-nio-8080&quot;]
+
+java.io.IOException: Unknown error: 316
+  at sun.nio.ch.NativeThread.signal(Native Method)
+  at sun.nio.ch.ServerSocketChannelImpl.implCloseSelectableChannel(ServerSocketChannelImpl.java:292)
+  at java.nio.channels.spi.AbstractSelectableChannel.implCloseChannel(AbstractSelectableChannel.java:234)
+  at java.nio.channels.spi.AbstractInterruptibleChannel.close(AbstractInterruptibleChannel.java:115)
+  at sun.nio.ch.ServerSocketAdaptor.close(ServerSocketAdaptor.java:137)
+  at org.apache.tomcat.util.net.NioEndpoint.unbind(NioEndpoint.java:599)
+  at org.apache.tomcat.util.net.AbstractEndpoint.stop(AbstractEndpoint.java:698)
+  at org.apache.coyote.AbstractProtocol.stop(AbstractProtocol.java:493)
+  at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:95)
+  at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.&lt;init&gt;(TomcatEmbeddedServletContainer.java:69)
+  at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:289)
+  at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:146)
+  at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:159)
+  at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:132)
+  at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:476)
+  at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+  at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:683)
+  at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+  at org.springframework.boot.SpringApplication.run(SpringApplication.java:944)
+  at org.springframework.boot.SpringApplication.run(SpringApplication.java:933)
+  at com.proj.projApplication.main(projApplication.java:14)
+
+2015-11-03 16:01:58.739 ERROR 5295 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Cannot pause connector: 
+
+java.io.IOException: Unknown error: 316
+  at sun.nio.ch.NativeThread.signal(Native Method)
+  at sun.nio.ch.ServerSocketChannelImpl.implCloseSelectableChannel(ServerSocketChannelImpl.java:292)
+  at java.nio.channels.spi.AbstractSelectableChannel.implCloseChannel(AbstractSelectableChannel.java:234)
+  at java.nio.channels.spi.AbstractInterruptibleChannel.close(AbstractInterruptibleChannel.java:115)
+  at sun.nio.ch.ServerSocketAdaptor.close(ServerSocketAdaptor.java:137)
+  at org.apache.tomcat.util.net.NioEndpoint.unbind(NioEndpoint.java:599)
+  at org.apache.tomcat.util.net.AbstractEndpoint.stop(AbstractEndpoint.java:698)
+  at org.apache.coyote.AbstractProtocol.stop(AbstractProtocol.java:493)
+  at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:95)
+  at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.&lt;init&gt;(TomcatEmbeddedServletContainer.java:69)
+  at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:289)
+  at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:146)
+  at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:159)
+  at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:132)
+  at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:476)
+  at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+  at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:683)
+  at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+  at org.springframework.boot.SpringApplication.run(SpringApplication.java:944)
+  at org.springframework.boot.SpringApplication.run(SpringApplication.java:933)
+  at com.proj.projApplication.main(projApplication.java:14)
+
+2015-11-03 16:01:58.899  INFO 5295 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/hello],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public org.springframework.web.servlet.ModelAndView com.proj.controller.HelloWorldController.hello()
+2015-11-03 16:01:58.904  INFO 5295 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-11-03 16:01:58.904  INFO 5295 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-11-03 16:01:58.918  INFO 5295 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler]
+2015-11-03 16:01:59.187  INFO 5295 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-11-03 16:01:59.246  INFO 5295 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080/http
+2015-11-03 16:01:59.246 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:01:59.248  INFO 5295 --- [           main] com.proj.projApplication             : Started projApplication in 4.127 seconds (JVM running for 4.409)
+2015-11-03 16:01:59.302 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:01:59.406 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:01:59.611 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:02:00.014 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:02:00.820 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:02:02.425 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:02:04.030 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:02:05.632 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:02:07.237 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+2015-11-03 16:02:08.841 ERROR 5295 --- [8080-Acceptor-0] org.apache.tomcat.util.net.NioEndpoint   : Socket accept failed
+
+java.nio.channels.ClosedChannelException: null
+  at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:235)
+  at org.apache.tomcat.util.net.NioEndpoint$Acceptor.run(NioEndpoint.java:793)
+  at java.lang.Thread.run(Thread.java:745)
+
+Could not execute build using Gradle installation '/Users/lee/gradle-2.8'.
+4:02:09 PM: External task execution finished 'bootRun'.
+</code></pre>
+
+<p>It looks like the 8080 port is somehow taken. But I don&rsquo;t remember any program using 8080. So, I ran lsof to see if there is any. lsof didn&rsquo;t find any thing using 8080. This is getting weird. I knew it probably wouldn&rsquo;t help but I still ran a port scan on 8080. I found a mysterious application using 8080. Soon, I found <a href="http://apple.stackexchange.com/questions/66158/unkown-process-listening-at-port-8080">an article</a> describing the same problem.</p>
+
+<p>It turns out I have Cisco VPN client installed (to access my company network). It does some kernel hack, so lsof doesn&rsquo;t tell. After I removed the software, the problem was solved.</p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">longstation</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2016-01-22</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/spring-boot/">Spring Boot</a>
+          
+          <a href="/tags/java/">Java</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/static-variable-linking-error/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Static Variable Linking Error</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/an-infinite-gc-problem/">
+            <span class="next-text nav-default">An Infinite GC Problem</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">longstation</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

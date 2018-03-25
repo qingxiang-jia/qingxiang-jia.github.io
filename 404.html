@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Longstation</title>
+  <title>404 page not found - Longstation</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -28,7 +28,7 @@
 <meta name="generator" content="Hugo 0.37.1" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
+<link rel="canonical" href="" />
 <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Longstation" />
   <link href="http://localhost:1313/index.xml" rel="feed" type="application/rss+xml" title="Longstation" />
 
@@ -50,14 +50,10 @@
 
 
 
-<meta property="og:title" content="Longstation" />
+<meta property="og:title" content="404 Page not found" />
 <meta property="og:description" content="Hugo theme even example site." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
-
-
-
-<meta property="og:updated_time" content="2018-03-24T00:00:00&#43;00:00"/>
+<meta property="og:url" content="" />
 
 
 
@@ -68,11 +64,15 @@
 
 
 
-<meta itemprop="name" content="Longstation">
+
+
+
+
+<meta itemprop="name" content="404 Page not found">
 <meta itemprop="description" content="Hugo theme even example site.">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Longstation"/>
+<meta name="twitter:title" content="404 Page not found"/>
 <meta name="twitter:description" content="Hugo theme even example site."/>
 
 <!--[if lte IE 9]>
@@ -138,154 +138,20 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           
-  <section id="posts" class="posts">
-    
-    
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/intuition-of-iszero/">Intuition of isZero</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2016-09-29 </span>
-      <div class="post-category">
-          
-            <a href="/categories/learning/"> Learning </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Before reading, make sure you understand how positive integers are represented in lambda calculus.
-We want isZero to return true for zero (λ f x. x) and false for all other numbers.
-isZero = λ n. n (λ z. false) true  Alternatively, you can write is as:
-isZero n = n (λ z. false) true  So what is zero? Zero is λ f x. x, a function that takes two parameters f and x, and return x.
-    </div>
-    <div class="read-more">
-      <a href="/post/intuition-of-iszero/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/jni-library-name-mac/">JNI Library Name on Mac</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2016-09-23 </span>
-      <div class="post-category">
-          
-            <a href="/categories/practicals/"> Practicals </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      If you try a hello world example for JNI programming, it may tell you that you can just use System.loadLibrary(hello); to load a native library (may be C++, may be C, or some other language). Specifically, on Windows, this &ldquo;hello&rdquo; means &ldquo;hello.dll&rdquo;; on Linux or Unix, it means &ldquo;hello.so&rdquo;. I guess Mac is just one of the Unix members, so I have a shared library compiled and named &ldquo;hello.so&rdquo;.
-But I got &ldquo;UnsatisfiedLinkError&rdquo;.
-    </div>
-    <div class="read-more">
-      <a href="/post/jni-library-name-mac/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/two-ways-to-declare-a-binary-tree-in-haskell/">Two Ways to Declare A Binary Tree in Haskell</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2016-09-23 </span>
-      <div class="post-category">
-          
-            <a href="/categories/learning/"> Learning </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      I am about to take Professor Jhala&rsquo;s class and now I am learning Haskell. One thing I find interesting is how you can define a recursive data structure in two different ways.
-Method 1
-data Tree a = Leaf a | Branch (Tree a) (Tree a)  Method 2
-data Tree a = EmptyTree | Node a (Tree a) (Tree a)  In short, method 2 is just method 1 with the &ldquo;|&rdquo; moved one left.
-    </div>
-    <div class="read-more">
-      <a href="/post/two-ways-to-declare-a-binary-tree-in-haskell/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/static-variable-linking-error/">Static Variable Linking Error</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2016-05-07 </span>
-      <div class="post-category">
-          
-            <a href="/categories/practicals/"> Practicals </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      I was working on a side project. It&rsquo;s in C++. Given that I haven&rsquo;t done much in C++, I treat it as an opportunity to learn C++ as the project progresses. I was stuck on a problem for several days. Here is the problem. I have a class variable (named cache) but it&rsquo;s static. When compile, it keeps telling me:
-Undefined symbols for architecture x86_64: &quot;H264_Decoder::cache&quot;, referenced from: H264_Decoder::H264_Decoder(void (*)(AVFrame*, AVPacket*, void*), void*) in H264_Decoder.
-    </div>
-    <div class="read-more">
-      <a href="/post/static-variable-linking-error/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/solve-spring-boot-unknown-error/">Solve Spring Boot Unknown Error</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2016-01-22 </span>
-      <div class="post-category">
-          
-            <a href="/categories/practicals/"> Practicals </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      I was working on a short Spring Boot project. However, on my computer, no matter what I tried, it couldn&rsquo;t start and gave me &ldquo;unknown error&rdquo;. The following is the error log:
-Wrong Spring Boot output: 4:01:54 PM: Executing external task 'bootRun'... :compileJava UP-TO-DATE :processResources UP-TO-DATE :classes UP-TO-DATE :findMainClass :bootRun . ____ _ __ _ _ /\\ / ___'_ __ _ _(_)_ __ __ _ \ \ \ \ ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \ \\/ ___)| |_)| | | | | || (_| | ) ) ) ) ' |____| .
-    </div>
-    <div class="read-more">
-      <a href="/post/solve-spring-boot-unknown-error/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-  </section>
-  
-  <nav class="pagination">
-    
-    
-      <a class="next" href="/page/2/">
-        <span class="next-text">Next</span>
-        <i class="iconfont icon-right"></i>
-      </a>
-  </nav>
+<div class="not-found">
+  <h1 class="error-emoji"></h1>
+  <p class="error-text">/* 404 page not found. */</p>
+  <p class="error-link"><a href="/">↑ Back Home ↑</a></p>
+</div>
+<script>
+  var errorEmojiContainer = document.getElementsByClassName('error-emoji')[0];
+  var emojiArray = [
+    '\\(o_o)/', '(o^^)o', '(˚Δ˚)b', '(^-^*)', '(≥o≤)', '(^_^)b', '(·_·)',
+    '(=\'X\'=)', '(>_<)', '(;-;)', '\\(^Д^)/',
+  ];
+  var errorEmoji = emojiArray[Math.floor(Math.random() * emojiArray.length)];
+  errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
+</script>
 
         </div>
         

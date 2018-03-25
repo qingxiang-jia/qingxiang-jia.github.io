@@ -57,7 +57,7 @@
 
 
 
-<meta property="og:updated_time" content="2018-03-24T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2016-01-12T00:00:00&#43;00:00"/>
 
 
 
@@ -144,9 +144,34 @@
     
       <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/intuition-of-iszero/">Intuition of isZero</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/an-infinite-gc-problem/">An Infinite GC Problem</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2016-09-29 </span>
+      <span class="post-time"> 2016-01-12 </span>
+      <div class="post-category">
+          
+            <a href="/categories/work/"> Work </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Recently in work, I encountered an interesting GC (garbage collection) related problem. We have a console like application, when a user logs in, the program loads the corresponding history file so that the user is able to look for &ldquo;recent commands&rdquo;. However, when the history file is very large (say, 200 MB), this loading process triggers GC. This sounds right because the file is very large, reading it all into the memory will create a memory shortage and thus triggers the GC.
+    </div>
+    <div class="read-more">
+      <a href="/post/an-infinite-gc-problem/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/a-benchmark-flaw/">A Benchmark Flaw</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2015-10-25 </span>
       <div class="post-category">
           
             <a href="/categories/learning/"> Learning </a>
@@ -158,13 +183,11 @@
   
   <div class="post-content">
     <div class="post-summary">
-      Before reading, make sure you understand how positive integers are represented in lambda calculus.
-We want isZero to return true for zero (λ f x. x) and false for all other numbers.
-isZero = λ n. n (λ z. false) true  Alternatively, you can write is as:
-isZero n = n (λ z. false) true  So what is zero? Zero is λ f x. x, a function that takes two parameters f and x, and return x.
+      Would declaring a String variable and then using it run faster or just using a String literal run faster? I had this in mind, and made the following test.
+public static void main(String[] args) { String a = &quot;kNuZbcI4No&quot;; Path path = Paths.get(&quot;10000.txt&quot;); long start2 = System.currentTimeMillis(); try (Stream&lt;String&gt; lines = Files.lines(path)) { lines.forEach(s -&gt; s.equalsIgnoreCase(&quot;5GxtHQS42y&quot;)); } catch (IOException e) { System.out.println(e); } long end2 = System.currentTimeMillis(); long start1 = System.
     </div>
     <div class="read-more">
-      <a href="/post/intuition-of-iszero/" class="read-more-link">Read more..</a>
+      <a href="/post/a-benchmark-flaw/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
@@ -172,9 +195,9 @@ isZero n = n (λ z. false) true  So what is zero? Zero is λ f x. x, a function 
     
       <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/jni-library-name-mac/">JNI Library Name on Mac</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/convert-plaintext-to-anki-decks/">Convert Plaintext to ANKI Decks</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2016-09-23 </span>
+      <span class="post-time"> 2015-10-03 </span>
       <div class="post-category">
           
             <a href="/categories/practicals/"> Practicals </a>
@@ -186,11 +209,12 @@ isZero n = n (λ z. false) true  So what is zero? Zero is λ f x. x, a function 
   
   <div class="post-content">
     <div class="post-summary">
-      If you try a hello world example for JNI programming, it may tell you that you can just use System.loadLibrary(hello); to load a native library (may be C++, may be C, or some other language). Specifically, on Windows, this &ldquo;hello&rdquo; means &ldquo;hello.dll&rdquo;; on Linux or Unix, it means &ldquo;hello.so&rdquo;. I guess Mac is just one of the Unix members, so I have a shared library compiled and named &ldquo;hello.so&rdquo;.
-But I got &ldquo;UnsatisfiedLinkError&rdquo;.
+      ANKI is a software that uses flash cards to help you memorize stuff, such as improving vocabulary for a foreign languge. I have a vocabulary book in .doc format, and I want to convert it into decks of flash cards that Anki can recongnize.
+After some massage, I obtained a text file with the following layout:
+word definition1 definition2 word definition1 word definition1 definition2 definition3  Anki accepts several plaintext formats, the one I used, is:
     </div>
     <div class="read-more">
-      <a href="/post/jni-library-name-mac/" class="read-more-link">Read more..</a>
+      <a href="/post/convert-plaintext-to-anki-decks/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
@@ -198,9 +222,36 @@ But I got &ldquo;UnsatisfiedLinkError&rdquo;.
     
       <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/two-ways-to-declare-a-binary-tree-in-haskell/">Two Ways to Declare A Binary Tree in Haskell</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/numbers-in-java/">Numbers in Java</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2016-09-23 </span>
+      <span class="post-time"> 2015-10-01 </span>
+      <div class="post-category">
+          
+            <a href="/categories/practicals/"> Practicals </a>
+          
+        </div>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      I encountered a problem where I need to put numbers into a set, and later check whether a number is contained in the set. But since we are using Set&lt;Long&gt;, an idea crossed my mind: will 1 equal to 1? &ndash; If I create two Long object holding the same value, are they consider equal by Set?
+Yes. Because the hashcode method is implemeted as follows:
+return (int)(value ^ (value &gt;&gt;&gt; 32));  So only the value of that Number object matters, as opposed to the &ldquo;regular&rdquo; implementation:
+    </div>
+    <div class="read-more">
+      <a href="/post/numbers-in-java/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/jsonp-front-and-backend/">JSONP Front &amp; Backend</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2014-07-22 </span>
       <div class="post-category">
           
             <a href="/categories/learning/"> Learning </a>
@@ -212,65 +263,11 @@ But I got &ldquo;UnsatisfiedLinkError&rdquo;.
   
   <div class="post-content">
     <div class="post-summary">
-      I am about to take Professor Jhala&rsquo;s class and now I am learning Haskell. One thing I find interesting is how you can define a recursive data structure in two different ways.
-Method 1
-data Tree a = Leaf a | Branch (Tree a) (Tree a)  Method 2
-data Tree a = EmptyTree | Node a (Tree a) (Tree a)  In short, method 2 is just method 1 with the &ldquo;|&rdquo; moved one left.
+      Single Origin Policy It means the elements in cs.columbia.edu can only request resources in its domain or its sub domains, such as clic.cs.columbia.edu. But sometimes a web page on clic.cs.columbia.edu may need to request resources on cs.mit.edu. There are many ways to deal with this problem, but through out my internship project, I found JSONP is the most convenient way.
+How to Bypass It? If single origin policy is really the case, why you can see an image in a web page that may be hosted on some other server?
     </div>
     <div class="read-more">
-      <a href="/post/two-ways-to-declare-a-binary-tree-in-haskell/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/static-variable-linking-error/">Static Variable Linking Error</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2016-05-07 </span>
-      <div class="post-category">
-          
-            <a href="/categories/practicals/"> Practicals </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      I was working on a side project. It&rsquo;s in C++. Given that I haven&rsquo;t done much in C++, I treat it as an opportunity to learn C++ as the project progresses. I was stuck on a problem for several days. Here is the problem. I have a class variable (named cache) but it&rsquo;s static. When compile, it keeps telling me:
-Undefined symbols for architecture x86_64: &quot;H264_Decoder::cache&quot;, referenced from: H264_Decoder::H264_Decoder(void (*)(AVFrame*, AVPacket*, void*), void*) in H264_Decoder.
-    </div>
-    <div class="read-more">
-      <a href="/post/static-variable-linking-error/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    
-      <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/solve-spring-boot-unknown-error/">Solve Spring Boot Unknown Error</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2016-01-22 </span>
-      <div class="post-category">
-          
-            <a href="/categories/practicals/"> Practicals </a>
-          
-        </div>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      I was working on a short Spring Boot project. However, on my computer, no matter what I tried, it couldn&rsquo;t start and gave me &ldquo;unknown error&rdquo;. The following is the error log:
-Wrong Spring Boot output: 4:01:54 PM: Executing external task 'bootRun'... :compileJava UP-TO-DATE :processResources UP-TO-DATE :classes UP-TO-DATE :findMainClass :bootRun . ____ _ __ _ _ /\\ / ___'_ __ _ _(_)_ __ __ _ \ \ \ \ ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \ \\/ ___)| |_)| | | | | || (_| | ) ) ) ) ' |____| .
-    </div>
-    <div class="read-more">
-      <a href="/post/solve-spring-boot-unknown-error/" class="read-more-link">Read more..</a>
+      <a href="/post/jsonp-front-and-backend/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
@@ -280,11 +277,11 @@ Wrong Spring Boot output: 4:01:54 PM: Executing external task 'bootRun'... :comp
   
   <nav class="pagination">
     
-    
-      <a class="next" href="/page/2/">
-        <span class="next-text">Next</span>
-        <i class="iconfont icon-right"></i>
+      <a class="prev" href="/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text">Prev</span>
       </a>
+    
   </nav>
 
         </div>

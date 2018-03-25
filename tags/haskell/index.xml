@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haskell on Longstation</title>
+    <link>http://localhost:1313/tags/haskell/</link>
+    <description>Recent content in Haskell on Longstation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 23 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Two Ways to Declare A Binary Tree in Haskell</title>
+      <link>http://localhost:1313/post/two-ways-to-declare-a-binary-tree-in-haskell/</link>
+      <pubDate>Fri, 23 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/two-ways-to-declare-a-binary-tree-in-haskell/</guid>
+      <description>I am about to take Professor Jhala&amp;rsquo;s class and now I am learning Haskell. One thing I find interesting is how you can define a recursive data structure in two different ways.
+Method 1
+data Tree a = Leaf a | Branch (Tree a) (Tree a)  Method 2
+data Tree a = EmptyTree | Node a (Tree a) (Tree a)  In short, method 2 is just method 1 with the &amp;ldquo;|&amp;rdquo; moved one left.</description>
+    </item>
+    
+  </channel>
+</rss>

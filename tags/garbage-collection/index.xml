@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Garbage Collection on Longstation</title>
+    <link>http://localhost:1313/tags/garbage-collection/</link>
+    <description>Recent content in Garbage Collection on Longstation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/garbage-collection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Infinite GC Problem</title>
+      <link>http://localhost:1313/post/an-infinite-gc-problem/</link>
+      <pubDate>Tue, 12 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/an-infinite-gc-problem/</guid>
+      <description>Recently in work, I encountered an interesting GC (garbage collection) related problem. We have a console like application, when a user logs in, the program loads the corresponding history file so that the user is able to look for &amp;ldquo;recent commands&amp;rdquo;. However, when the history file is very large (say, 200 MB), this loading process triggers GC. This sounds right because the file is very large, reading it all into the memory will create a memory shortage and thus triggers the GC.</description>
+    </item>
+    
+  </channel>
+</rss>

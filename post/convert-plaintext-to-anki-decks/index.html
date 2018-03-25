@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Convert Plaintext to ANKI Decks - Longstation</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="longstation" />
+  <meta name="description" content="ANKI is a software that uses flash cards to help you memorize stuff, such as improving vocabulary for a foreign languge. I have a vocabulary book in .doc format, and I want to convert it into decks of flash cards that Anki can recongnize.
+After some massage, I obtained a text file with the following layout:
+word definition1 definition2 word definition1 word definition1 definition2 definition3  Anki accepts several plaintext formats, the one I used, is:" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/convert-plaintext-to-anki-decks/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Convert Plaintext to ANKI Decks" />
+<meta property="og:description" content="ANKI is a software that uses flash cards to help you memorize stuff, such as improving vocabulary for a foreign languge. I have a vocabulary book in .doc format, and I want to convert it into decks of flash cards that Anki can recongnize.
+After some massage, I obtained a text file with the following layout:
+word definition1 definition2 word definition1 word definition1 definition2 definition3  Anki accepts several plaintext formats, the one I used, is:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/convert-plaintext-to-anki-decks/" />
+
+
+
+<meta property="article:published_time" content="2015-10-03T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2015-10-03T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Convert Plaintext to ANKI Decks">
+<meta itemprop="description" content="ANKI is a software that uses flash cards to help you memorize stuff, such as improving vocabulary for a foreign languge. I have a vocabulary book in .doc format, and I want to convert it into decks of flash cards that Anki can recongnize.
+After some massage, I obtained a text file with the following layout:
+word definition1 definition2 word definition1 word definition1 definition2 definition3  Anki accepts several plaintext formats, the one I used, is:">
+
+
+<meta itemprop="datePublished" content="2015-10-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2015-10-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="290">
+
+
+
+<meta itemprop="keywords" content="Java," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Convert Plaintext to ANKI Decks"/>
+<meta name="twitter:description" content="ANKI is a software that uses flash cards to help you memorize stuff, such as improving vocabulary for a foreign languge. I have a vocabulary book in .doc format, and I want to convert it into decks of flash cards that Anki can recongnize.
+After some massage, I obtained a text file with the following layout:
+word definition1 definition2 word definition1 word definition1 definition2 definition3  Anki accepts several plaintext formats, the one I used, is:"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Longstation</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Longstation</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Convert Plaintext to ANKI Decks</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2015-10-03 </span>
+        <div class="post-category">
+            
+              <a href="/categories/practicals/"> Practicals </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p><a href="http://ankisrs.net/">ANKI</a> is a software that uses flash cards to help you memorize stuff, such as improving vocabulary for a foreign languge. I have a vocabulary book in <code>.doc</code> format, and I want to convert it into decks of flash cards that Anki can recongnize.</p>
+
+<p>After some massage, I obtained a text file with the following layout:</p>
+
+<pre><code>word
+definition1
+definition2
+
+word
+definition1
+
+word
+definition1
+definition2
+definition3
+</code></pre>
+
+<p>Anki accepts <a href="http://ankisrs.net/docs/manual.html#importing">several plaintext formats</a>, the one I used, is:</p>
+
+<pre><code>hello; this is&lt;br&gt;a two line answer
+two; this is a one line one
+</code></pre>
+
+<p>where as you can see, <code>&lt;br&gt;</code> denotes a line break. Then I wrote the following code to convert it to Anki-friendly text file, and imported to Anki. Code itself is trivial (also quite and dirty), but it&rsquo;s fine for this type of one-time task.</p>
+
+<pre><code>import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+public class Txt2AnkiDeck {
+  public static void main(String[] args) throws Exception {
+    ArrayList&lt;ArrayList&lt;String&gt;&gt; entries = new ArrayList&lt;&gt;();
+    String filename = &quot;21.txt&quot;;
+    try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+      String line;
+      ArrayList&lt;String&gt; entry = null;
+      while ((line = br.readLine()) != null) {
+        if (line.length() == 0) {
+          entries.add(entry);
+          entry = null;
+        } else {
+          if (entry != null) {
+            entry.add(line);
+          } else {
+            entry = new ArrayList&lt;&gt;();
+            entry.add(line);
+          }
+        }
+      }
+      // verify it works, yes
+      for (ArrayList&lt;String&gt; singleEntry : entries) {
+        for (String l : singleEntry) {
+          System.out.println(l);
+        }
+        System.out.println();
+      }
+      // output decks to file
+      PrintWriter writer = new PrintWriter(filename + &quot;-o.txt&quot;, &quot;UTF-8&quot;);
+      for (ArrayList&lt;String&gt; deck : entries) {
+        for (int i = 0; i &lt; deck.size(); i++) {
+          if (i == 0) { // is word
+            writer.print(deck.get(i) + &quot;; &quot;);
+          } else { // is definition
+            writer.print(&quot;&lt;br&gt;&quot; + deck.get(i));
+          }
+        }
+        writer.println(&quot;&quot;);
+      }
+      writer.close();
+    }
+  }
+}
+</code></pre>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">longstation</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2015-10-03</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/java/">Java</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/a-benchmark-flaw/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">A Benchmark Flaw</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/numbers-in-java/">
+            <span class="next-text nav-default">Numbers in Java</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">longstation</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

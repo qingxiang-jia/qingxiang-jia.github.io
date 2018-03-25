@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>JSONP Front &amp; Backend - Longstation</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="longstation" />
+  <meta name="description" content="Single Origin Policy It means the elements in cs.columbia.edu can only request resources in its domain or its sub domains, such as clic.cs.columbia.edu. But sometimes a web page on clic.cs.columbia.edu may need to request resources on cs.mit.edu. There are many ways to deal with this problem, but through out my internship project, I found JSONP is the most convenient way.
+How to Bypass It? If single origin policy is really the case, why you can see an image in a web page that may be hosted on some other server?" />
+
+  <meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.37.1" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/jsonp-front-and-backend/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="JSONP Front &amp; Backend" />
+<meta property="og:description" content="Single Origin Policy It means the elements in cs.columbia.edu can only request resources in its domain or its sub domains, such as clic.cs.columbia.edu. But sometimes a web page on clic.cs.columbia.edu may need to request resources on cs.mit.edu. There are many ways to deal with this problem, but through out my internship project, I found JSONP is the most convenient way.
+How to Bypass It? If single origin policy is really the case, why you can see an image in a web page that may be hosted on some other server?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/jsonp-front-and-backend/" />
+
+
+
+<meta property="article:published_time" content="2014-07-22T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2014-07-22T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="JSONP Front &amp; Backend">
+<meta itemprop="description" content="Single Origin Policy It means the elements in cs.columbia.edu can only request resources in its domain or its sub domains, such as clic.cs.columbia.edu. But sometimes a web page on clic.cs.columbia.edu may need to request resources on cs.mit.edu. There are many ways to deal with this problem, but through out my internship project, I found JSONP is the most convenient way.
+How to Bypass It? If single origin policy is really the case, why you can see an image in a web page that may be hosted on some other server?">
+
+
+<meta itemprop="datePublished" content="2014-07-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2014-07-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="392">
+
+
+
+<meta itemprop="keywords" content="JavaScript,Java," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JSONP Front &amp; Backend"/>
+<meta name="twitter:description" content="Single Origin Policy It means the elements in cs.columbia.edu can only request resources in its domain or its sub domains, such as clic.cs.columbia.edu. But sometimes a web page on clic.cs.columbia.edu may need to request resources on cs.mit.edu. There are many ways to deal with this problem, but through out my internship project, I found JSONP is the most convenient way.
+How to Bypass It? If single origin policy is really the case, why you can see an image in a web page that may be hosted on some other server?"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Longstation</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Longstation</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">JSONP Front &amp; Backend</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2014-07-22 </span>
+        <div class="post-category">
+            
+              <a href="/categories/learning/"> Learning </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#single-origin-policy">Single Origin Policy</a></li>
+<li><a href="#how-to-bypass-it">How to Bypass It?</a></li>
+<li><a href="#how-jsonp-works">How JSONP Works?</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h3 id="single-origin-policy">Single Origin Policy</h3>
+
+<p>It means the elements in <code>cs.columbia.edu</code> can only request resources in its domain or its sub domains, such as <code>clic.cs.columbia.edu</code>. But sometimes a web page on <code>clic.cs.columbia.edu</code> may need to request resources on <code>cs.mit.edu</code>. There are many ways to deal with this problem, but through out my internship project, I found JSONP is the most convenient way.</p>
+
+<h3 id="how-to-bypass-it">How to Bypass It?</h3>
+
+<p>If single origin policy is really the case, why you can see an image  in a web page that may be hosted on some other server? Why can you use Google Web Fonts where the font file is hosted on Google&rsquo;s servers. Why can you include a url of jQuery on some CDN server? It turns out, the aforementioned resources can indeed be requested cross domain. JSONP uses this to do cross domain request.</p>
+
+<p>When you make a JSONP request, the browser sees it as regular JavaScript request, only that request &ldquo;script&rdquo; contains the data you need. However, in order for this to work, you cannot just put your plain data (since it&rsquo;s not JavaScript). You need to wrap them into a JavaScript function. Thus when the requested &ldquo;script&rdquo; arrives at your browser, you have control over that function (data).</p>
+
+<h3 id="how-jsonp-works">How JSONP Works?</h3>
+
+<p><pre class="line-numbers"><code class="language-javascript">$.ajax({
+        type: &ldquo;get&rdquo;,
+        async: false,
+        url: &ldquo;<a href="http://localhost:1990/iWantSomeData&quot;">http://localhost:1990/iWantSomeData&quot;</a>,
+        dataType: &ldquo;jsonp&rdquo;,
+        jsonp: &ldquo;callback&rdquo;,
+        jsonpCallback: &ldquo;callbackFunc&rdquo;,
+        success: function (response) {
+            console.log(response);
+        },
+        error: function () {
+            console.log(&ldquo;Unexpected error&rdquo;);
+        }
+    });
+</code></pre>
+This is a regular ajax get request. The difference is that there are <code>jsonp</code> and <code>jsonCallback</code>. I have read some tutorials, and found they abuse the term <code>callback</code>. I don&rsquo;t really want to explain <code>jsonCallback</code> with <code>callback</code>. In the project, I need to develop both frontend and backend. So I got a chance to see it from both sides. Line 5 is not important, you can put any word you like in the there. Line 6 is important; it is the name of the wrapper JavaScript function in which the data is stored (as mentioned above, we wrap data into a JavaScript function).</p>
+
+<p>For example, if I request a JSON object through <code>http://localhost:1990/iWantSomeData</code>, the server will return
+<pre><code class="language-javascript">callbackFunc({&ldquo;OS&rdquo;:[
+    {&ldquo;name&rdquo;:&ldquo;Ubuntu&rdquo;, &ldquo;vendor&rdquo;:&ldquo;Canonical&rdquo;},
+    {&ldquo;name&rdquo;:&ldquo;OS X&rdquo;, &ldquo;vendor&rdquo;:&ldquo;Apple&rdquo;},
+    {&ldquo;name&rdquo;:&ldquo;Windows&rdquo;, &ldquo;vendor&rdquo;:&ldquo;Microsoft&rdquo;}
+]})</code></pre>
+Notice this JSON is wrapped in a JavaScript script, for the browser, it is just a regular script. On line 7, the response is the JSON object <strong><em>extracted</em></strong> from the returned &ldquo;script&rdquo;.</p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">longstation</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2014-07-22</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/javascript/">JavaScript</a>
+          
+          <a href="/tags/java/">Java</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/numbers-in-java/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Numbers in Java</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">longstation</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

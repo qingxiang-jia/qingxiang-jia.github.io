@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Longstation</title>
+    <link>http://localhost:1313/tags/javascript/</link>
+    <description>Recent content in Javascript on Longstation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JSONP Front &amp; Backend</title>
+      <link>http://localhost:1313/post/jsonp-front-and-backend/</link>
+      <pubDate>Tue, 22 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/jsonp-front-and-backend/</guid>
+      <description>Single Origin Policy It means the elements in cs.columbia.edu can only request resources in its domain or its sub domains, such as clic.cs.columbia.edu. But sometimes a web page on clic.cs.columbia.edu may need to request resources on cs.mit.edu. There are many ways to deal with this problem, but through out my internship project, I found JSONP is the most convenient way.
+How to Bypass It? If single origin policy is really the case, why you can see an image in a web page that may be hosted on some other server?</description>
+    </item>
+    
+  </channel>
+</rss>

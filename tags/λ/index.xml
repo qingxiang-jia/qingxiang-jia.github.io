@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Λ on Longstation</title>
+    <link>http://localhost:1313/tags/%CE%BB/</link>
+    <description>Recent content in Λ on Longstation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%CE%BB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Intuition of isZero</title>
+      <link>http://localhost:1313/post/intuition-of-iszero/</link>
+      <pubDate>Thu, 29 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/intuition-of-iszero/</guid>
+      <description>Before reading, make sure you understand how positive integers are represented in lambda calculus.
+We want isZero to return true for zero (λ f x. x) and false for all other numbers.
+isZero = λ n. n (λ z. false) true  Alternatively, you can write is as:
+isZero n = n (λ z. false) true  So what is zero? Zero is λ f x. x, a function that takes two parameters f and x, and return x.</description>
+    </item>
+    
+  </channel>
+</rss>
