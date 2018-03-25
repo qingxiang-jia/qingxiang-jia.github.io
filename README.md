@@ -1,0 +1,1 @@
+This is the rendered (by Hugo) version of my blog. The original contents are not included here.
